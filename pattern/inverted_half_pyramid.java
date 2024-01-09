@@ -1,6 +1,6 @@
 public class inverted_half_pyramid {
     public static void main(String[] args) {
-        int n = 4, m = 4;
+        int n = 4;
         for(int i=1;i<=n;i++){
         //space
         for(int k=n-i;k>=1;k--){
