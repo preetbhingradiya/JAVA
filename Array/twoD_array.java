@@ -20,12 +20,16 @@ public class twoD_array {
             }
         }
 
+        System.out.print("Enter the number You can find :- ");
+        int x=sc.nextInt();
+
         for(int i=0;i<row;i++){
             for(int j=0;j<cols;j++){
-                System.out.print(nums[i][j] + " ");
+                if(nums[i][j]==x){
+                     System.out.println("Number can present " + i + " " + j);
+                     break;
+                }
             }
-            System.out.println();
         }
-
     }
 }
