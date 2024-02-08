@@ -14,5 +14,6 @@ public class reverse{
             sb.setCharAt(back, frontChar);
         }
         System.out.println(sb);
+        
     }
 }
