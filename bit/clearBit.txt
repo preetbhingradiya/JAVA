@@ -1,0 +1,15 @@
+1) clear the 3rd bit (position=2) of a number i n. (n=0101)
+i=2  (bacuse the position is 2)
+n=0101
+
+bit Mask= 1<<i;
+oparation=And With Not
+
+1<<2;   (binary of 1)
+0001<<2
+0100;
+
+~(0100) =1011  (all 0 is 1 and all 1 is 0);
+
+1011 and(&) 0101
+ANS = 0001  (Decimal 1)
