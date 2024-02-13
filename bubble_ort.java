@@ -17,6 +17,7 @@ public class bubble_ort {
                     int temp=arr[i];
                     arr[i]=arr[j];
                     arr[j]=temp;
+                    
                     // without third variable
                     // arr[i]=arr[i]+arr[j];
                     // arr[j]=arr[i]-arr[j];
