@@ -1,4 +1,6 @@
-public class bubble_ort {
+package sorting;
+// in this sort check the current element is largest then next element swap two number
+public class bubble_sort {
 
     public static void printArray(int array[]){
         for(int i=0;i<array.length;i++){
@@ -25,6 +27,7 @@ public class bubble_ort {
                 }
            }
         }        
+        printArray(arr);
         // for(int i=0;i<arr.length-1;i++){
         //     for(int j=0;j<arr.length-i-1;j++){
         //          if(arr[j]>arr[j+1]){
@@ -35,6 +38,5 @@ public class bubble_ort {
         //          }
         //     }
         //  }
-        printArray(arr);
     }
 }
