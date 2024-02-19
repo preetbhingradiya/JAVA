@@ -25,7 +25,6 @@ public class trapping_water {
             // trapped water = waterlevel - hight * width
             trappeWater += waterLevel - hight[i];
         }
-
         return trappeWater;
     }
 
