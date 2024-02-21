@@ -1,4 +1,4 @@
-package sorting;
+
 //in this sort array divided by two pasrt sorted and unsorted
 //ex = 7,8|3,1,2
 //if first check unsorted element is smalest to the last sorted array that push in it.

@@ -11,14 +11,14 @@ public class selection_sort {
     public static void main(String[] args){
         int[] arr={7,8,1,3,2};
         for(int i=0;i<arr.length-1;i++){
-            int temp=i;
+            int minposi=i;
             for(int j=i+1;j<arr.length;j++){
-                if(arr[temp]>arr[j]){
-                    temp=j;
+                if(arr[minposi]>arr[j]){
+                    minposi=j;
                 }
             }
-            int val=arr[temp];
-            arr[temp]=arr[i];
+            int val=arr[minposi];
+            arr[minposi]=arr[i];
             arr[i]=val;
         }
         printArray(arr);
