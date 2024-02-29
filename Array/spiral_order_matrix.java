@@ -29,7 +29,6 @@ public class spiral_order_matrix {
             }
             RowStart++;
 
-
             for(int i=RowStart;i<=RowEnd;i++){
                 System.out.print(nums[i][colEnd] + " ");
             }
