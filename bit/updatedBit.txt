@@ -1,6 +1,6 @@
 1) update the 2nd bit (position=1) of number n to 1 (n=0101)
 
-* in update what is from 1 set to 0 or o to set 1
+* in update what is from 1 set to 0 or 0 to set 1
 in this example position 2 means 0 set 1
 
 ** for 0
