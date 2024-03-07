@@ -1,0 +1,28 @@
+*** CONSTRUCTORS ***
+constructors is a special method which is invoked automatically at the time of object
+creation
+@* Type of constructors
+ 1) Non-parameterized
+ 2) Parameterized
+ 3) Copy
+
+*** ENCAPTULATION ***
+Encaptulation is defined as the wrapping up of data and methods unser a single unit.
+it also implements of data binding
+
+*** INHERITANCE ***
+inheritance is when propertiy and methods of base class are passed on to a derived class
+inheritance means one class propertiy and methods are pass to another class
+
+@* Type of inheritance
+    1)Single inheritance
+    -> only one based(parent) class and deried(child) class to pass propertiy and methods
+
+    2)Multi inheritance
+    ->top to bottom all ony by one class property and metods are pass(inheritance)
+            base class -> deried class -> derived class(this child class of previous class)
+
+    3)Hierarchical inheritance
+    ->only one based(parent) class and Multipal deried(child) class to pass(inheritance) propertiy and methods
+                                       based
+                    deried(child)                   deried(child)
