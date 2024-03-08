@@ -43,3 +43,39 @@ inheritance means one class propertiy and methods are pass to another class
 
 
 * PACKAGE is group of similler type of classes , interfaces and sub-packages;
+
+*** ABSTRACTION ***
+-> hiding all unnecessary details and showing only the important parts to the unser
+        idea (true)
+        implements (false)
+        1) Abstraction class
+        2) interface
+
+*Abstraction Class means
+-> can't careate an instance(object) of Abstract class
+-> also create a Abstract method and CONSTRUCTORS
+
+* interface
+-> interface is a blueprint of a class
+-> All methods are public , abstraction , and with out implements
+-> Used to achive total abstraction
+-> Variables in the interface are final,public,static
+        1) multiple inheritance
+                A               B
+                        C 
+        2) Total Abstract (100%)
+
+
+
+* Static Keyword
+-> Static Keywordin java used to share the same Variables and methods of a diven class
+   . Variables
+   . methods
+   . sub class
+   . block etc are also define static Keyword
+
+* Super Keyword
+-> Super Keyword is use to refer immediate parent class object
+        . to access parent's propertie
+        . to access parent's methods
+        . to access parent's constructor
