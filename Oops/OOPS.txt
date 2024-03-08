@@ -26,3 +26,20 @@ inheritance means one class propertiy and methods are pass to another class
     ->only one based(parent) class and Multipal deried(child) class to pass(inheritance) propertiy and methods
                                        based
                     deried(child)                   deried(child)
+
+     4)Hybrid inheritance
+
+*** POLYMORPHISM  ***
+ -> Multipal froms(structur) apply same work that use polymorphism
+ ->when you try the achive same thing and try do a similler thing in multipal froms
+
+ 1)Compile time polymorphism (static)
+ -> Method Overloading
+ => multipal methods with same name but different parameters    
+
+ 2)Run time polymorphism (daynamic)
+ -> Methods Overriding
+ =>parent and child class both contain same methods name with the different defination
+
+
+* PACKAGE is group of similler type of classes , interfaces and sub-packages;
