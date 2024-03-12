@@ -1,0 +1,17 @@
+fb(num-1)
+                    fb(5)
+
+                         fb(3)
+
+                fb(4)
+
+                    fb(2) =1 bellow
+
+            fb(3)
+
+                fb(1)
+
+  1+0=1  fb(2)  fb(num-2  (2-2)=0)
+
+ fb(1)    fb(0) 0 also return 0 num==0
+1 return beacuse num==1

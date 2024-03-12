@@ -1,4 +1,3 @@
-package Recursion;
 public class Factorial {
 
     public static int factorialNumber(int num){
@@ -10,8 +9,7 @@ public class Factorial {
 
     public static void main(String[] a){
         int num=5;
-        System.out.println(factorialNumber(num));
-        
+        System.out.println(factorialNumber(num)); 
     }
 
 }
