@@ -11,12 +11,13 @@ public class removeDuplicate {
         // 'c' - 'a'  =2
         char currchar = str.charAt(i);
         // fisrt p 
-        //map['p' - 'a' = 17-1 = 16]  = map[16] == true not
+        //map['p' - 'a' = 16-0 = 16]  = map[16] == true  (charecter is repeted)
         if(map[currchar-'a']==true){
+            //duplicate character ignore
             duplicateStr(str,i+1,newstr,map);
         }
         else{
-            //ap['p' - 'a' = 17-1 = 16]  = map[16] = true value is change here
+            //ap['p' - 'a' = 16-0 = 16]  = map[16] = true value is change here
             map[currchar-'a']=true;
             duplicateStr(str,i+1,newstr.append(currchar),map);
         }
