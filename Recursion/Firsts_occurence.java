@@ -9,7 +9,7 @@ public class Firsts_occurence {
     }
 
     public static void main(String[] args){
-        int [] arr={8,3,6,9,5,10,2,3,4,5,2,6,2}
+        int [] arr={8,3,6,9,5,10,2,3,4,5,2,6,2};
         System.out.println("First Occurence index is :- " + fisrtOccurence(arr,0));
     }
 }
