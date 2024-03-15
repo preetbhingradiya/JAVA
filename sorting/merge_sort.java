@@ -1,10 +1,12 @@
 public class merge_sort {
 
     public static void conquer(int[] arr,int start,int mid,int end){
+        //left(0,3) = 4   right(4,6) =2  (6-0+1 = 7)
         int[] marge=new int[end-start+1];
-        int index1=start;
-        int index2 = mid+1;
-        int x =0;
+        int index1=start;  //left part
+        int index2 = mid+1; //right part
+        int x =0; //in merge array
+                
         while (index1<=mid && index2<=end) {
             if(arr[index1]<=arr[index2]){
                 marge[x++]=arr[index1++];  
@@ -27,7 +29,7 @@ public class merge_sort {
         if(start>=end){
             return;
         }
-      int mid = (start+end)/2;
+      int mid = (start+end)/2;  //start + (end-start)/2
       divided(arr, start, mid);
       divided(arr, mid+1, end);
       conquer(arr,start,mid,end);
