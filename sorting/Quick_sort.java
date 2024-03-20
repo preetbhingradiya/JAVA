@@ -37,8 +37,6 @@ public class Quick_sort {
 
     public static void main(String[] args){
         int [] arr= {6,3,9,8,2,5};
-        int pivot = arr.length-1;
-
         quickSort(arr,0,arr.length-1);
 
         for(int i=0;i<arr.length;i++)
