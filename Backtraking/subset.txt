@@ -1,0 +1,27 @@
+                     "abc"         -> Yes mens charcter can pair
+                    /  \            ->  No mens charcter not join to set    
+                   /     \           -> if empty then _  
+                 Yes       \ No         ->    n      3
+            A  "bc"          _  "bc"         2  ==  2    = 8
+              /  \              / \  
+             /    \            Y     N 
+            Yes    No        B  "c"    _  "c"
+         AB  "c"    A  "c"       / \        Y   N
+             / \        /  \     Y    N     C   _
+            /   \       Y    N   BC _  B
+           Yes   No    AC    A
+        ABC      AB  _
+
+
+
+
+ALl Subset
+
+ABC
+AB
+Ac
+A
+BC
+B
+C
+" "
