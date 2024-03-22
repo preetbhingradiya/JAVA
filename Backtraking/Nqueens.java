@@ -29,10 +29,12 @@ public class Nqueens {
         return true;
     }
 
-    public static void nQueens(char board[][], int row) {
+    static int count= 0;
 
+    public static void nQueens(char board[][], int row) {
         if (row == board.length) {
             printArray(board);
+            count++;
             return;
         }
 
@@ -62,8 +64,8 @@ public class Nqueens {
         }
     }
 
-    public static void main(String[] args) {
-        int n = 4;
+    public static void main(String[] args) {    
+        int n = 2;
         char chaseBoard[][] = new char[n][n]; // N*N size 2*2
 
         for (int i = 0; i < n; i++) {
@@ -73,7 +75,7 @@ public class Nqueens {
         }
 
         nQueens(chaseBoard, 0);
-
+        System.out.println("Total count of set Q ways: " + count);
     }
 
 }
