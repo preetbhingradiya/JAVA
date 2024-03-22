@@ -20,7 +20,7 @@ public class Subset {
 
     public static void main(String[] args) {
         String str = "abc";
-        // findSubset(str,"" , 0);
+        findSubset(str,"" , 0);
 
 
         //if The array try this logic
