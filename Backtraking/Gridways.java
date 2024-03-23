@@ -7,7 +7,7 @@ public class Gridways {
         }
         else if(i==m || j==n){  //boundery crose
             return 0;
-        }
+        }   
         //right way
         int wa1 = uniquePath(i, j+1, m, n);   //row as it's col+1 becuse move right side
 
