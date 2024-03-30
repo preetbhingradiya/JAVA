@@ -34,7 +34,7 @@ public class Sudoku_solver {
 
     public static boolean sudokuSolver(int sudoku[][],int row,int col){
         //base case
-        if(row==9 && col==0) return true;   
+        if(row==9) return true;   
 
         //recusrion
 

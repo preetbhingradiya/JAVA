@@ -10,16 +10,16 @@ public class Nqueens {
             }
         }
 
-        // diag left * move up left row-1 and col+1 if queen is(1,1) then (1-1,1+1)
-        // check (0,2) if Queen here return false otherwise true
+        // diag left * move up left row-1 and col-1 if queen is(1,1) then (1-1,1-1)
+        // check (0,0) if Queen here return false otherwise true
         for (int i = row - 1, j = col - 1; i >= 0 && j >= 0; i--, j--) {
             if (board[i][j] == 'Q') {
                 return false;
             }
         }
 
-        // diag right * move up right row+1 and col-1 if queen is(1,1) then (1+1,1-1)
-        // check (0,0) if Queen here return false otherwise true
+        // diag right * move up right row-1 and col+1 if queen is(1,1) then (1-1,1+1)
+        // check (0,2) if Queen here return false otherwise true
         for (int i = row - 1, j = col + 1; i >= 0 && j<board.length ; i--, j++) {
             if (board[i][j] == 'Q') {
                 return false;
@@ -65,7 +65,7 @@ public class Nqueens {
     }
 
     public static void main(String[] args) {    
-        int n = 2;
+        int n = 4;
         char chaseBoard[][] = new char[n][n]; // N*N size 2*2
 
         for (int i = 0; i < n; i++) {
