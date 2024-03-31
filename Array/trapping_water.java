@@ -22,7 +22,7 @@ public class trapping_water {
             // waterlevel = min(maxleft boundery , maxright boundery)
             int waterLevel=Math.min(rightMax[i], leftMax[i]);
 
-            // trapped water = waterlevel - hight * width
+            // trapped water = waterlevel - hight * width All time with is 1
             trappeWater += waterLevel - hight[i];
         }
         return trappeWater;
