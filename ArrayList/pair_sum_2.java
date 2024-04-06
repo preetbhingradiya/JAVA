@@ -14,6 +14,7 @@ public class pair_sum_2 {
         int Left = pivot+1;  //smallest value
         int Rigth = pivot;  //larget value
 
+        // n(0)
         while (Rigth!=Left) {
             if(list.get(Left)+list.get(Rigth)==target){
                 System.out.println("Pair of : "+list.get(Left) + " And " + list.get(Rigth) );
