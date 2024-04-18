@@ -77,6 +77,41 @@ public class Linkedlist {
         temp.next=newNode;
     }
 
+    public int removeFirst(){
+        if(Size==0) return -1; //Linkedlist size is 0
+        else if(Size==1){
+            int val = Head.data;
+            Head=Tail=null;  //Linkedlist size is 1
+            Size=0;
+            return val;
+        }
+        int val = Head.data;
+        Head = Head.next;
+        Size--;
+        return val;
+    }
+
+    public int removeLast(){
+        if(Size==0) return -1; //Linkedlist size is 0
+        else if(Size==1){
+            int val = Head.data;
+            Head=Tail=null;  //Linkedlist size is 1
+            Size=0;
+            return val;
+        }
+        
+        Node prev = Head;
+        for(int i=0;i<Size-2;i++){   //lastindex ka previous value 
+            prev = prev.next;
+        }
+
+        int val = prev.next.data;
+        prev.next = null ;  //previous value can null beacuasit value is make last
+        Tail = prev;
+        Size--;
+        return val;  
+    }
+
     public static void main(String[] args){
         Linkedlist li = new Linkedlist();
         li.print();
@@ -92,6 +127,14 @@ public class Linkedlist {
         li.print();
 
         System.out.println("Size of Linkedlist is : " + Size);
+        System.out.println();
+
+        System.out.println("Remove the element : " + li.removeFirst());
+        System.out.println();
+
+        System.out.println("Remove the element : " + li.removeLast());
+
+        li.print();
         //output
         //2 -> 1 -> 3 -> 4-> null
     //  Head             Tail
