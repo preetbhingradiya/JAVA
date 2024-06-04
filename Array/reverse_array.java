@@ -4,9 +4,13 @@ public class reverse_array {
         int end=arr.length-1;
 
         while (start<end) {
-            arr[start]=arr[start]+arr[end];
-            arr[end]=arr[start]-arr[end];
-            arr[start]=arr[start]-arr[end];
+            // arr[start]=arr[start]+arr[end];
+            // arr[end]=arr[start]-arr[end];
+            // arr[start]=arr[start]-arr[end];
+
+            arr[start]=arr[start]^arr[end];  //zor operator
+            arr[end]=arr[start]^arr[end];
+            arr[start]=arr[start]^arr[end];
             start++;
             end--;
         }
