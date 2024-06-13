@@ -1,3 +1,4 @@
+package binary;
 public class binary_search {
     public static int binarySearch(int arr[],int key){
         int first=0;

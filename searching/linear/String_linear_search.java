@@ -1,3 +1,4 @@
+package linear;
 public class String_linear_search {
     public static void main(String[] args) {
         String name = "yuvraj";

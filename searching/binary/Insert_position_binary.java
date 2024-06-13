@@ -1,3 +1,4 @@
+package binary;
 public class Insert_position_binary {
 
     static int searchInsert(int[] nums, int target) {

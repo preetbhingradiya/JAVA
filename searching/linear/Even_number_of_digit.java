@@ -1,3 +1,4 @@
+package linear;
 import java.util.Arrays;
 
 public class Even_number_of_digit {

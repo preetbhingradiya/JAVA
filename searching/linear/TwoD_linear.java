@@ -1,3 +1,4 @@
+package linear;
 import java.util.Arrays;
 
 public class TwoD_linear {

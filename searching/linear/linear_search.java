@@ -1,3 +1,4 @@
+package linear;
 public class linear_search {
 
     public static int linearSearch(int arr[],int key){
