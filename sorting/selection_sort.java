@@ -1,4 +1,3 @@
-package sorting;
 // in this sort store the samallest number in every time after the swap smallest and largest elemst every time that formula work ann end of sorted array given 
 
 public class selection_sort {
@@ -37,15 +36,16 @@ public class selection_sort {
     }
 
     public static void swap(int[] arr , int start ,int end){
+        if(start==end) return;
         arr[start] = arr[start] + arr[end];
         arr[end] = arr[start] - arr[end];
         arr[start] = arr[start] - arr[end];
     }
 
     public static int getFindMaxIndex(int[] arr , int start ,int end){
-        int max = arr[start];
+        int max = start;
 
-        for (int i = start; i < end; i++) {
+        for (int i = start; i <= end; i++) {
             if (arr[max] < arr[i]) {
                 max = i;
             }
