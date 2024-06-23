@@ -1,7 +1,7 @@
-
-public class Missing_number {
+public class Find_first_positive {
     public static void main(String[] args) {
-        int[] nums = { 4, 0, 2, 1 };
+        int []  nums = {3,4,-1,1};
+        System.out.println(missingNumber(nums));
     }
 
     public static int missingNumber(int[] nums) {
@@ -9,9 +9,9 @@ public class Missing_number {
         int n = nums.length;
 
         while(i < n){
-            int current = nums[i];   //array rang wil be 0 -> n menas index queal
+            int current = nums[i] - 1; 
 
-            if(nums[i] < n && nums[i] != nums[current]){   // 4 < 4  && 4 != nums[4] = 4 != 1   // here also check the element is equal to length so not swap any other skipp and i++
+            if(nums[i] > 0 && nums[i] <= n && nums[i] != nums[current]){
                 swap(nums, i , current);    
             }else{
                 i++;
@@ -19,12 +19,12 @@ public class Missing_number {
         }
 
         for(int index=0;index<n;index++){
-            if(nums[index] != index){   // after sorted [0 , 1 , 2 , 4] all elemnet is equel to index if no any one return this index
-                return index;
+            if(nums[index] != index+1){
+                return index+1;
             }
         }
 
-        return n;
+        return n + 1;
     }
 
     public static void swap(int[]  nums , int start , int end){
