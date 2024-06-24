@@ -1,0 +1,34 @@
+1) String pool
+-> String pool is seprate structure for create inside to the heap memory
+
+ex = String a = "name"
+     String b = "name" 
+    
+    a --> name <--name
+
+-> Here a and b is point to the sampe name object in heap memory 
+-> it means the both are the refrence variable
+
+2) String Immutabal
+-> but if the any varible value can change other refrence variable can't be change
+becuase string is Immutabal 
+
+ex String a = "name"  
+    a = "age" // here new object create not change the name value
+   String b = "name
+
+
+3) comparison of String (==)
+
+-> string pool are provide the same value of the different refrence varible
+String p1 = "preet"
+String p2 = "preet"
+
+p1==p2 return true
+p1 --> preet  <-- p2
+
+but if
+p1 --> preet
+p2 -->preet
+p1==p2 return false
+p1 and p2 are point to different value return false
