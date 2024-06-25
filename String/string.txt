@@ -24,8 +24,8 @@ ex String a = "name"
 String p1 = "preet"
 String p2 = "preet"
 
-p1==p2 return true
-p1 --> preet  <-- p2
+p1==p2 return true  
+p1 --> preet  <-- p2  here both refrence variable point to same object
 
 but if
 p1 --> preet
