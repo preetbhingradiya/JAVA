@@ -13,5 +13,8 @@ public class comparision {
 
         //if the olu check the object value use .equal method
         System.out.println(person1.equals(person2));
+
+        //== check both refrence varible are poin to the same object or not
+        //.equals() check only both object is same or not
     }
 }
