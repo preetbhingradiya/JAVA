@@ -1,0 +1,1 @@
+public class Special_pattern {
