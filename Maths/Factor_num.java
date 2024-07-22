@@ -3,7 +3,7 @@ import java.util.ArrayList;
 public class Factor_num {
     public static void main(String[] args) {
         int n = 20;
-        factorls3(n);
+        factorls(n);
     }
 
     static void factorls(int n) {
