@@ -1,7 +1,7 @@
 public class Roated_sorted {
     public static void main(String[] args) {
         int[] arr = { 5, 6, 7, 8, 9, 1, 2, 3 };
-        int taregt = 9;
+        int taregt = 7;
         System.out.println(RoatedSortedArray(arr, taregt, 0, arr.length-1));
 
     }
