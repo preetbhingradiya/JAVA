@@ -30,3 +30,4 @@ public class selection_sort {
 
         return FindMaxelement(arr, i+1, max);
     }
+}
