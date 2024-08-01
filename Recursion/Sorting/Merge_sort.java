@@ -3,8 +3,8 @@ import java.util.Arrays;
 public class Merge_sort {
     public static void main(String[] args) {
         int[] arr = { 10, 8, 3, 0, 78, 11, -1 };
-        int [] arr2 = diviedeArray(arr);
-        System.out.println(Arrays.toString(arr2));
+        arr = diviedeArray(arr);
+        System.out.println(Arrays.toString(arr));
     }
 
     static int[] diviedeArray(int[] arr){
