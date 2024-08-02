@@ -1,3 +1,5 @@
+import java.util.Arrays;
+
 public class merge_sort {
 
     public static void conquer(int[] arr,int start,int mid,int end){
@@ -39,8 +41,6 @@ public class merge_sort {
         int [] arr={12, 11, 13, 5, 6, 7};
         int n=arr.length;
         divided(arr,0,n-1);
-        for(int i=0;i<n;i++){
-            System.out.print(arr[i] + " ");
-        }
+        System.out.println(Arrays.toString(arr));
     }
 }
