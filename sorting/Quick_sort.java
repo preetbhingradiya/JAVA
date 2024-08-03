@@ -22,7 +22,7 @@ public class Quick_sort {
         arr[i]=temp;
 
         //after this 
-        // 3,2,5,9,8,5    pivot 5 is correct middle
+        // 3,2,5,9,8,6,5    pivot 5 is correct middle
         return i;
     }
 
