@@ -12,7 +12,7 @@ public class Quick_sort {
             return;
         }
 
-        int start = low;
+        int start = low ;
         int end = high;
         int mid = start + (end - start)/ 2;
         int pivot = arr[mid];
@@ -41,6 +41,6 @@ public class Quick_sort {
         //After the pivot is set is one correct postion
         //[-1,0,3,8,78,11,10] 0 was pivot so it set correct postion
         QuickSort(arr, low, end);  // pass the (arr,0,0=pivot) 0 -> pivot  it callled left part
-        QuickSort(arr, start, high); // it called right part
+        QuickSort(arr, start, high); // it called right part and check pivot is correct all other element
     }
 }
