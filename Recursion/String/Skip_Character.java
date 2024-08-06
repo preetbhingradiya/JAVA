@@ -2,47 +2,50 @@ public class Skip_Character {
     public static void main(String[] args) {
         String str = "baccad";
 
-        //A is Skip in str
+        // A is Skip in str
         // skipAInStr("", str);
 
-
-        System.out.println(skipCharacter(str, 0, str.length()-1, '!'));
+        
+        char duplicate = findFirstDupicate(str, 0, 1);
+        System.out.println(skipChar(str, 0, duplicate));
     }
 
-    public static void skipAInStr(String newStr, String str){
-        if(str.length()==0) {
+    public static void skipAInStr(String newStr, String str) {
+        if (str.length() == 0) {
             System.out.println(newStr);
             return;
         }
 
         char ch = str.charAt(0);
-        if(ch=='a'){
+        if (ch == 'a') {
             skipAInStr(newStr, str.substring(1));
-        }
-        else{
+        } else {
             skipAInStr(newStr + ch, str.substring(1));
         }
     }
 
+    static char findFirstDupicate(String str, int i, int j){
+        if(i==str.length()) return ' ';
+
+        if(j < str.length() && i < j){
+            if(str.charAt(i)==str.charAt(j)){
+                return str.charAt(i);
+            }
+            return findFirstDupicate(str, i, j+1);
+        }
+
+        return findFirstDupicate(str, i+1, i+2);
+    }
+
     static StringBuffer newStr = new StringBuffer();
-    static Boolean isAvailable = false;
-    public static String skipCharacter(String str, int i, int j, char dupicatChar) {
+    static String skipChar(String str, int i, char duplicate){
         if(i==str.length()) return newStr.toString();
 
-        if ( i < j){
-            if(str.charAt(j) != dupicatChar){
-                dupicatChar = str.charAt(i);
-                return skipCharacter(str, i, j-1, dupicatChar);
-            }else{
-                isAvailable = true;
-                return skipCharacter(str, i, j-1, dupicatChar);
-            }
+        if(str.charAt(i)==duplicate){
+            return skipChar(str, i+1, duplicate);
         }
 
-        if(!isAvailable){
-            newStr.append(str.charAt(i));
-            isAvailable = false;
-        }
-        return skipCharacter(str, i+1, str.length()-1, dupicatChar);
+        newStr.append(str.charAt(i));
+        return skipChar(str, i+1, duplicate);
     }
 }
