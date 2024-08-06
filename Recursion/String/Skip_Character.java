@@ -5,9 +5,13 @@ public class Skip_Character {
         // A is Skip in str
         // skipAInStr("", str);
 
-        
+        //Here find first duplicate in case a is first duplicat
         char duplicate = findFirstDupicate(str, 0, 1);
         System.out.println(skipChar(str, 0, duplicate));
+
+        //skip pertical string like apple
+        String name = "abcdappleefgh";
+        System.out.println(skipString(name));
     }
 
     public static void skipAInStr(String newStr, String str) {
@@ -48,4 +52,15 @@ public class Skip_Character {
         newStr.append(str.charAt(i));
         return skipChar(str, i+1, duplicate);
     }
+
+    static String skipString(String str){
+        if(str.isEmpty()) return " ";
+
+        if(str.startsWith("apple")){
+            return skipString(str.substring(5)); //5 chris skip
+        }
+
+        return str.charAt(0) + skipString(str.substring(1));
+    }
+
 }
