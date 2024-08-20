@@ -1,6 +1,6 @@
 /**
  * Maze proble are applying two matrix like here 3 by 3
- * element is (0,0) now it can get last postion of (3,3)
+ * element is (3,3) now it can get last postion of (0,0)
  * so count how many way to achieve this target and element are move onl right nd down side
  */
 public class Maze {
