@@ -3,7 +3,7 @@ public class Nqueens {
     public static boolean isSafe(char board[][], int row, int col) {
         // vertical top * col is same but row can decrese -1 (row-2,col) (row-1,col)
         // (row,col)
-
+        //upeer side for the element
         for (int i = row - 1; i >= 0; i--) {
             if (board[i][col] == 'Q') {
                 return false;
