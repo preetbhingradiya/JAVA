@@ -66,7 +66,7 @@ public class Sudoku_solver {
             for(int j=0;j<9;j++){
                 System.out.print(sudoku[i][j] + " ");
             }
-            System.out.println();
+            System.out.println(); 
         }
     }
 
