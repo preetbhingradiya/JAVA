@@ -27,7 +27,7 @@ class Pen{
 public class Class_Object {
     
     public static void main(String[] args){
-        Pen newPen = new Pen();
+        Pen newPen = new Pen(); 
 
         newPen.setColor("red");
         newPen.setWidth(10);
