@@ -4,7 +4,7 @@ public class Hello {
         thread.start();
 
         for (;;) {
-            System.out.println("Hello word");
+            System.out.println("Hello");
         }
     }
 }
