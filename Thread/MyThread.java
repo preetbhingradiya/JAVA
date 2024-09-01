@@ -22,7 +22,7 @@ public class MyThread extends Thread {
         
         try {
             t1.join(); // wating for the thread 
-        } catch (Exception e) {
+        } catch (InterruptedException e) {
             System.out.println(e);
         }
 
