@@ -6,7 +6,7 @@ public class SingletonClass {
     private SingletonClass(){
 
     }
-
+    
     //instance varible as satatic or signletonclass so no matter how may object create use of instance refer all only one
     private static SingletonClass instance;
      
