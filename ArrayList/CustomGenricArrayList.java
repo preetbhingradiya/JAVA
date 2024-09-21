@@ -1,15 +1,17 @@
-
 import java.util.Arrays;
+//int generic T use of create object or array it not allowed to do it]
+// bcz generic is not idea which data type object will create 
+// so create main Object class to define it 
 
-public class CuatomArrayList {
+public class CustomGenricArrayList<T> {
 
-    private int[] data;
+    private Object[] data;
     private static final int DEFAULT_SIZE = 10; // Changed to final
     private int size = 0;  // Also working as index
 
     // Constructor to initialize the data array
-    public CuatomArrayList() {
-        this.data = new int[DEFAULT_SIZE];
+    public CustomGenricArrayList() {
+        this.data = new Object[DEFAULT_SIZE];
     }
 
     public void add(int num){
@@ -24,7 +26,7 @@ public class CuatomArrayList {
     }
 
     private void resize() {
-       int[] temp = new int[data.length * 2];   //current length * 2;
+       Object[] temp = new Object[data.length * 2];   //current length * 2;
 
        for(int i=0; i<data.length; i++){
             temp[i] = data[i];
@@ -33,16 +35,16 @@ public class CuatomArrayList {
        data = temp;
     }
 
-    public  int remove(){
-        int removed = data[--size];
+    public  T remove(){
+        T removed = (T)(data[--size]);
         return removed;
     }
-
-    public int get(int index){
+    
+    public T get(int index){
         if (index < 0 || index >= size) {
             throw new IndexOutOfBoundsException("Index: " + index + ", Size: " + size);
         }
-        return data[index];
+        return (T)(data[index]);
     }
 
     public int size(){
@@ -59,25 +61,14 @@ public class CuatomArrayList {
     @Override
     public String toString(){
         return Arrays.toString(data);
-        // return Arrays.toString(Arrays.copyOf(data, size));
     }
 
-    public static void main(String[] args) {
-        CuatomArrayList list = new CuatomArrayList(); // Corrected to call constructor
-        list.add(10);
-        list.add(20);
-        list.add(30);
-        list.add(40);
-        list.add(50);
-        list.add(60);
-        list.add(70);
-        list.add(80);
-        list.add(90);
-        list.add(100);
-        list.add(110);
-        
+    public static void main(String[] args){
+        CustomGenricArrayList<Integer> list = new CustomGenricArrayList<>();
+
+        list.add(12);
+        list.add(13);
+
         System.out.println(list);
     }
-
-
 }
