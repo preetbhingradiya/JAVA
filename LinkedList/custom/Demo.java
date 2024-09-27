@@ -16,6 +16,15 @@ public class Demo {
         list.insertInIndex(101, 3);
 
         list.display();
+
+
+        System.out.println(list.deleteFirst());
+
+        list.display();
+
+        System.out.println(list.deleteLast());
+        
+        list.display();
     }
     
 }
