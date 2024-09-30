@@ -18,13 +18,20 @@ public class Demo {
         list.display();
 
 
-        System.out.println(list.deleteFirst());
+        System.out.println("Delete in FIRST " + list.deleteFirst());
 
         list.display();
 
-        System.out.println(list.deleteLast());
+        System.out.println("delete in LAST " + list.deleteLast());
         
         list.display();
+
+        System.out.println("Delete in INDEX " + list.deleteInIndex(1));
+
+        list.display();
+
+
+        System.out.println("23 in index of " + list.getIndex(23));
     }
     
 }
