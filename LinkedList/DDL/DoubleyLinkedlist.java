@@ -1,3 +1,4 @@
+import org.w3c.dom.Node;
 
 public class DoubleyLinkedlist {
 
@@ -64,6 +65,17 @@ public class DoubleyLinkedlist {
         // System.out.println("Taile is " + tail.val);
     }
 
+       
+    public Node get(int value) {
+        Node node = head;
+        while (node != null) {
+            if(node.val == value) return node;
+            node = node.next;
+        }
+
+        return null;
+    }
+
     public void insertInIndex(int index, int val) {
 
         if (index == 0) {
@@ -97,6 +109,30 @@ public class DoubleyLinkedlist {
         size++;
     }
 
+
+    public void insertAfter(int after, int val){
+        Node p = get(after);
+
+        if(p == null) {
+            System.out.println("Does not exit");
+            return;
+        }
+
+        Node node = new  Node(val);
+
+        node.next = p.next;
+
+        //connect node in left side
+        p.next = node;
+        node.prev = p;
+
+        //connect in right side
+        if(node.next !=  null){
+            node.next.prev = node;
+        }
+
+    }
+
     public void displayReverse() {
         Node temp = tail;
         while (temp != null) {
@@ -123,6 +159,9 @@ public class DoubleyLinkedlist {
         // list.displayReverse();
 
         list.insertInIndex(2, 100);
+        list.display();
+
+        list.insertAfter(8, 49);
         list.display();
     }
 
