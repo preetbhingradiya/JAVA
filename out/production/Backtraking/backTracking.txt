@@ -1,0 +1,5 @@
+type of backTracking 
+
+1)Decision =>  yes/or
+2)Optimization =>  finde sorted path
+3)Enumeration  =>  start to last how many path

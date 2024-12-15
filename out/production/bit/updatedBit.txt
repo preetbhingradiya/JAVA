@@ -1,0 +1,43 @@
+1) update the 2nd bit (position=1) of number n to 1 (n=0101)
+
+* in update what is from 1 set to 0 or 0 to set 1
+in this example position 2 means 0 set 1
+
+** for 0
+bit mask = 1<<i
+oparation= And With Not
+(Clear Bit)
+
+** for 1
+bit mask = 1<<i;
+oparation = or
+(Set Bit)
+
+ex. i=1
+    n=0101
+    for update 1 use setBit
+
+bit mask=1<<1
+0001<<1
+0010;
+
+oparation = 0010 | 0101
+ANS = 0111  (updated 1 in position 2 of (0)) 
+
+    
+
+2) update the 3nd bit (position=2) of number n to 0 (n=0101)
+
+ex. i=2
+    n=0101
+    for update 0 use clear Bit
+
+bit mask=1<<2;
+0001<<2;
+0100;
+
+oparation=~(0100) = 1011
+
+1011 & 0101
+
+ANS = 0001 (updated 0 in position 3 of (1)) 

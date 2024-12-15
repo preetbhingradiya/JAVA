@@ -1,0 +1,13 @@
+1) set the 2rd bit (position=1) of a number i n. (n=0101)
+i=2  (bacuse the position is 2)
+n=0101
+
+bit Mask= 1<<i;
+oparation=Or
+
+1<<1;   (binary of 1)
+0001<<1
+0010;
+
+0010 Or(|) 0101
+ANS = 0111  (deciaml is 7)

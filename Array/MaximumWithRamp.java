@@ -7,7 +7,7 @@ import java.util.Stack;
 public class MaximumWithRamp{
     public static void main(String[] args){
         int[] nums = {6,0,8,2,1,5};
-       System.out.println(maxWidthRamp(nums)); x
+       System.out.println(maxWidthRamp(nums));
     }
 
     public static int maxWidthRamp(int[] nums) {

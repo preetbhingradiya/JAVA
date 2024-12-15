@@ -1,0 +1,81 @@
+*** CONSTRUCTORS ***
+constructors is a special method which is invoked automatically at the time of object
+creation
+@* Type of constructors
+ 1) Non-parameterized
+ 2) Parameterized
+ 3) Copy
+
+*** ENCAPTULATION ***
+Encaptulation is defined as the wrapping up of data and methods unser a single unit.
+it also implements of data binding
+
+*** INHERITANCE ***
+inheritance is when propertiy and methods of base class are passed on to a derived class
+inheritance means one class propertiy and methods are pass to another class
+
+@* Type of inheritance
+    1)Single inheritance
+    -> only one based(parent) class and deried(child) class to pass propertiy and methods
+
+    2)Multi inheritance
+    ->top to bottom all ony by one class property and metods are pass(inheritance)
+            base class -> deried class -> derived class(this child class of previous class)
+
+    3)Hierarchical inheritance
+    ->only one based(parent) class and Multipal deried(child) class to pass(inheritance) propertiy and methods
+                                       based
+                    deried(child)                   deried(child)
+
+     4)Hybrid inheritance
+
+*** POLYMORPHISM  ***
+ -> Multipal froms(structur) apply same work that use polymorphism
+ ->when you try the achive same thing and try do a similler thing in multipal froms
+
+ 1)Compile time polymorphism (static)
+ -> Method Overloading
+ => multipal methods with same name but different parameters    
+
+ 2)Run time polymorphism (daynamic)
+ -> Methods Overriding
+ =>parent and child class both contain same methods name with the different defination
+
+
+* PACKAGE is group of similler type of classes , interfaces and sub-packages;
+
+*** ABSTRACTION ***
+-> hiding all unnecessary details and showing only the important parts to the unser
+        idea (true)
+        implements (false)
+        1) Abstraction class
+        2) interface
+
+*Abstraction Class means
+-> can't careate an instance(object) of Abstract class
+-> also create a Abstract method and CONSTRUCTORS
+
+* interface
+-> interface is a blueprint of a class
+-> All methods are public , abstraction , and with out implements
+-> Used to achive total abstraction
+-> Variables in the interface are final,public,static
+        1) multiple inheritance
+                A               B
+                        C 
+        2) Total Abstract (100%)
+
+
+
+* Static Keyword
+-> Static Keywordin java used to share the same Variables and methods of a diven class
+   . Variables
+   . methods
+   . sub class
+   . block etc are also define static Keyword
+
+* Super Keyword
+-> Super Keyword is use to refer immediate parent class object
+        . to access parent's propertie
+        . to access parent's methods
+        . to access parent's constructor
