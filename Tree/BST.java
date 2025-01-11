@@ -96,15 +96,43 @@ public class BST {
         display(node.right, "Right child of " + node.value + " : ");
     }
 
-    public void preOrder(){
+    public void preOrder() {
         preOrder(root);
     }
 
-    private void preOrder(Node node){
-        if(node == null) return;
-        System.out.println(node.value + " ");
-        preOrder(node.left);
-        preOrder(node.right);
+    private void preOrder(Node node) {
+        if (node == null)
+            return;
+
+        System.out.println(node.value + " "); // Node
+        preOrder(node.left); // Left
+        preOrder(node.right); // Right
+    }
+
+    public void inOrder() {
+        inOrder(root);
+    }
+
+    private void inOrder(Node node) {
+        if (node == null)
+            return;
+
+        inOrder(node.left); // Left
+        System.out.println(node.value + " "); // Node
+        inOrder(node.right); // Right
+    }
+
+    public void postOrder() {
+        postOrder(root);
+    }
+
+    private void postOrder(Node node) {
+        if (node == null)
+            return;
+            
+        postOrder(node.left); // Left
+        postOrder(node.right); // Right
+        System.out.println(node.value + " "); // Node
     }
 
     public static void main(String[] args) {
