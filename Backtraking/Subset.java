@@ -3,19 +3,7 @@ import java.util.List;
 
 public class Subset {
 
-    public static void findSubset(String str,String ans,int i){
-        if(i==str.length()){
-            if(ans.length()==0) System.out.print("null"+ " ");
-            System.out.print(ans + " ");
-            return;
-        }
-
-        //Yes choice (*join to pair so add character in to ans )
-        findSubset(str, ans+str.charAt(i), i+1);
-
-        //No choit (* not join to pair so not add in to ans)
-        findSubset(str, ans, i+1);
-    }
+x
 
 
     public static void main(String[] args) {
